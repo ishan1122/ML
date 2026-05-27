@@ -1,7 +1,8 @@
 from fastapi import FastAPI, Header, HTTPException
 import joblib
 import numpy as np
-
+import os
+API_KEY = os.getenv("API_KEY")
 app = FastAPI()
 
 # 🔐 API key
